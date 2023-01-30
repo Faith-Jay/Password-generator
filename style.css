@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-text-color: white;
+    --sec-text-color: #4ADF86;
+    --main-btn-color: #10B981;
+    --sec-btn-color:#273549;
+    --background-color: #1F2937;
+}
+
+body {
+    background-color: var(--background-color) ;
+    color: var(--main-text-color);
+    font-family: 'karla', sans-serif;
+    padding: 0 10%;
+    text-align: left;
+}
+main{
+    margin-top: 10%;
+}
+h1{
+    font-size: 3.5rem;
+}
+span{
+    color: var(--sec-text-color);
+    display: block;
+}
+
+.copy{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+#generate-password{
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--main-btn-color);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.line {
+    border: 1px solid var(--sec-btn-color);
+    border-radius: 2px;
+}
+
+.main-container{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.containers{
+    width: 45%;
+    height: 50px;
+    background-color: var(--sec-btn-color);
+    border-radius: 10px;
+    color: var(--sec-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .copy{
+        padding-top: 10px;
+        font-size: 1rem;
+        margin-bottom: 10%;
+    }
+    main{
+        margin-top: 25%;
+    }
+    .containers{
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .main-container{
+        display: block;
+        margin-top: 5%;
+    }
+}
